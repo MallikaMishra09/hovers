@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mysection{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+        }
+        .myc1{
+            height: 300px; 
+            border-radius:100%;
+            transition: 2s;
+
+        }
+        .myc1:hover{
+            border-radius: 0%;
+            height: 100%;
+            width: 100%;
+        }
+        .myc2{
+            height: 300px; 
+            border-radius:100%;
+            transition: 2s;
+        }
+        .myc2:hover{
+            border-radius: 0%;
+            height: 100%;
+            width: 100%;
+        }
+        .myc3{
+            height: 300px; 
+            border-radius:100%;
+            transition: 2s;
+
+        }
+        .myc3:hover{
+            border-radius: 0%;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- section for navigation bar -->
+    <section class="animate__animated animate__backInLeft animate__delay-1s animate__slow	1s animate__repeat-1">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(50, 173, 221) ;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" alt="" width="70" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Contact us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul> -->
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- section for imageslider -->
+    <section class="animate__animated animate__backInRight animate__delay-1s animate__slow	1s animate__repeat-1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/699268_UXX0G_9022_001_073_0000_Light.webp" class="d-block w-100" alt="..."
+                        style="height:400px ;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/GiantEditorialStandard_Vogue-Exquisite-grey-001_001_Default.webp"
+                        class="d-block w-100" alt="..."  style="height:400px ;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ProductPush_715666AAA0O9746_001_Light.jpg" class="d-block w-100" alt="..."  style="height:400px ;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- section for 3 grids -->
+    <section class="mysection">
+        <div class="mydiv1" style="height:300px ; background-color:rgb(146, 205, 228);  ">
+        <img src="images/gettyimages-1352333337-612x612.jpg" alt="" class="myc1 animate__animated animate__backInDown animate__delay-1s animate__slow	1s animate__repeat-1"">
+        </div>
+        <div class="mydiv2" style="height:300px ; background-color:rgb(92, 190, 230);  " >
+        <img src="images/gettyimages-537578652-612x612.jpg" alt=""  class="myc2 animate__animated animate__backInUp animate__delay-1s animate__slow	1s animate__repeat-1"">
+        </div>
+        <div class="mydiv3" style="height:300px ; background-color:rgb(38, 150, 194);  " >
+        <img src="images/gettyimages-850061640-612x612.jpg" alt=""  class="myc3 animate__animated animate__backInRight animate__delay-1s animate__slow	1s animate__repeat-1"">
+    </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
